@@ -1,0 +1,36 @@
+<html><head>
+    <link href="c3.css" rel="stylesheet" type="text/css">
+    
+    </head>
+<body>
+    <div id="chart"></div>
+<script src="d3.v3.min.js"></script>
+<script src="c3.min.js"></script>
+<script>
+	var chart = c3.generate({
+    data: {
+         x:'date',
+         xFormat : '%b %Y',
+        url: 'timeseries-Data.csv',
+        types: {
+            date: 'area',
+            price: 'area-spline'
+        }
+    },
+    axis: {
+      x: {
+          label: 'Dates',
+          type : 'timeseries',
+            tick: {
+                count: 11,
+                format: '%Y'
+          }
+        },
+        y: {
+          label: 'Prices'
+        }
+    }
+    });
+</script>
+</body>
+</html>
