@@ -10,7 +10,7 @@
 	var chart = c3.generate({
     data: {
          x:'date',
-         xFormat : '%b %Y',
+         xFormat : '%b %Y',         // Extract the data using format shortend month name and year with centuary
         url: 'timeseries-Data.csv',
         types: {
             date: 'area',

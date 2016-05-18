@@ -1,3 +1,8 @@
+/*
+This code just serves the chart.html and the data for data visualization on front-end side
+*/
+
+
 var express = require('express');
 var app =express();
 var path = require('path');
